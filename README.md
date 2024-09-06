@@ -13,6 +13,10 @@ As Aplicações usadas são muitas, como por exemplo:
 
 Foram utilizados meios de como utilizar a Inteligência Artificial como Ferramenta, não como código, mas também como pesquisar de forma eficiente, até auxiliando no nosso aprendizado também, foram utilizados conceitos de HTML (Linguagem de Marcação de Hipertexto), CSS (Linguagem de Estilo em Cascatas) e de JavaScript<br></br>
 
+# Link do Projeto
+
+[Confira Aqui](https://imersao-alura-gemini-plum.vercel.app/)
+
 # Conclusão
 
 Foi um projeto muito legal e divertido, apesar de simples. Principalmente pra quem é iniciante. Eu tenho já algum tipo de prática, mas é bem legal de se fazer. Espero que gostem e até a próxima :):):)
