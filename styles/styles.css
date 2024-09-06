@@ -1,0 +1,189 @@
+/*IMPORTA A FONTE DO GOOGLE*/
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');   
+ 
+/* RESET CSS */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Adiciona padding e border ao width/height */
+}
+
+/* ESTILOS RAIZ */
+html {
+  font-size: 62.5%; /* Ajuste para melhorar o ajuste da tipografia */
+}
+
+body {
+  background-color: #f7f0f0; /* Fundo com tema claro */
+  font-family: "Chakra Petch", sans-serif; /* Fonte do Google */
+}
+
+/* ESTILO DO CABEÇALHO */
+header {
+  text-align: center; /* Alinha o texto ao Centro*/
+}
+
+/*TITULO PRINCIPAL*/
+h1 {
+  margin: 48px 0 24px; /*Margem Superior de 48px e Margem Inferior de 24px e zera nas laterais*/
+  font-size: 2.2rem; /*Tamanho da Fonte*/
+  color: #333; /* Texto Escuro */
+}
+
+/* ESTILOS DO CONTEÚDO PRINCIPAL */
+main {
+  display: flex; /*Flexbox*/
+  flex-direction: column; /*Alinha em Colunas*/
+  align-items: center; /*Alinha ao Centro o Eixo Perpendicular*/
+  padding: 16px; /*Adiciona Espaçamento nos Elementos*/
+}
+
+/* ESTILO DO RODAPÉ */
+footer {
+  display: flex; /*Flexbox*/
+  justify-content: center; /*Alinha o Eixo Principal ao Centro*/
+  align-items: center; /*Alinha o Eixo Perpendicular ao Centro*/
+  width: 100vw; /*Largura de 100% da Tela*/
+  height: 96px; /*Altura de 96px*/
+  position: absolute; /*Posição Absoluta*/
+  bottom: -96px; /*Ajusta o Icone na Tela*/
+  left: 0; /*Posiciona a Esquerda*/
+  background-color: #333; /* Fundo Escuro do Rodapé */
+  color: #fff; /* Texto Branco para melhor contraste */
+}
+
+/* CONTEÚDO DO GAMES */
+#game-content {
+  overflow-y: scroll; /*Deixa a tela com uma barra de rolagem*/
+  max-height: 264px; /*Altura Máxima de 264px*/
+}
+
+/* CONTAINER DE BUSCA */
+#search-container {
+  display: flex; /*Flexbox*/
+  flex-direction: column; /*Alinha em Colunas*/
+  align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
+  margin-bottom: 32px; /*Margem Inferior de 32px*/
+}
+
+#search-name {
+  margin-top: 32px; /*Margem no topo de 32px*/
+  font-size: 1.2rem; /*Tamanho da Fonte*/
+  color: #333; /* Texto Escuro */
+}
+
+/* BOTÃO DE BUSCA */
+#searchBtn {
+    font-family: "Chakra Petch", sans-serif; /*Fonte do Google*/
+    border: none; /*Tira a Borda*/
+    border-radius: 999px; /*Arredonda o Botão*/
+    background-color: #336699; /*Fundo Azul*/
+    color: #fafafa; /*Texto branco para um bom contraste*/
+    font-size: 1.2rem; /*Tamanho da Fonte*/
+    width: 120px; /*Largura do Botão*/
+    height: 32px; /*Altura do Botão*/
+    cursor: pointer; /*Aparece o cursor do mouse*/
+}
+
+/* MECANISMO DE BUSCA */
+#search {
+  text-align: center; /*Alinha o texto ao centro*/
+  width: 70vw; /*Largura de 70% da Tela*/
+  margin: 8px 0 24px; /*Margem Superior de 8px, Margem Inferior de 24px e 0 nas laterais*/
+  background-color: #fafafa; /*Cor de Fundo Branca*/
+  border: 1px solid #bababa; /*Borda Suave Cinza Claro*/
+  border-radius: 4px; /*Arredondamento das Bordas*/ 
+  padding: 8px; /*Espaçamento*/
+}
+
+/*INFORMAÇÃO DOS GAMES - ESTILOS*/
+.game-info {
+  display: flex; /*Flexbox*/
+  flex-direction: column; /*Alinha em Colunas*/
+  align-items: center; /*Alinha ao Centro no Eixo Perpendicular*/
+  gap: 16px; /*Espaçamento de 16px*/
+  width: 80vw; /*Largura de 80% da Tela*/
+  margin-top: 32px;
+  background-color: #eee; /*Cor dos Cards - Cinza Claro*/
+  border: 2px solid #ddd; /*Borda Suave*/
+  border-radius: 4px; /*Arredonda as Bordas*/
+  padding: 16px; /*Adiciona Espaçamento para melhor leitura*/
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Sombra Suave*/
+}
+
+/* TABLETS (Paisagem e Retrato) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    /*Informação do Jogo*/
+    .game-info {
+      width: 60vw; /*Largura de 60% da Tela*/
+    }
+  }
+  
+  /* LAPTOPS*/
+  @media only screen and (min-width: 1025px) {
+    /*TITULO*/
+    h1{
+        font-size: 3.2rem; /*Tamanho da Fonte*/
+    }
+
+    /*PARÁGRAFOS E BOTÃO*/
+    #search-name, #searchBtn, .game-info p, .game-info strong, p{
+        font-size: 1.6rem; /*Tamanho da Fonte*/
+    }
+
+    /*BOTÃO*/
+    #searchBtn{
+        margin: 32px 0 48px; /*Margem superior de 32px, Margem Inferior de 48px e 0 nas laterais*/
+        width: 200px; /*Largura de 200px*/
+        height: 40px; /*Altura de 40px*/
+    }
+
+    /*INFORMAÇÃO DO JOGO*/
+    .game-info {
+      width: 70vw; /*Largura de 70% da tela*/
+      margin: 20px; /*Margem de 20px em todos os lados*/
+    }
+  
+    /*TITULO*/
+    .game-info h2 {
+      font-size: 2.4rem; /*Tamanho da Fonte*/
+    }
+  
+    /*CONTEÚDO DO JOGO*/
+    #game-content {
+      height: 720px; /*Altura de 720px*/
+    }
+  
+    /*RODAPÉ*/
+    footer {
+      font-size: 1.6rem; /*Tamanho da Fonte*/
+      position: static; /*Posição Static (Padrão)*/
+      margin-top: 48px; /*Margem no topo de 48px*/
+      width: 100%; /*Largura de 100%*/
+      padding: 16px 0; /*Espaçamento Superior de 16px e 0 nas laterais*/
+    }
+  }
+  
+  /* Telas grandes (HD, Full HD, 2.5K) */
+  @media only screen and (min-width: 1920px) {
+    /*CONTAINER DE BUSCA*/
+    .search-container {
+      max-width: 1200px; /*Largura Máxima de 1200px*/
+      margin: 0 auto; /*Alinha ao Centro*/
+    }
+  
+    /*INFORMAÇÕES DO JOGO*/
+    .game-info {
+      margin: 40px; /*Margem de 40px*/
+    }
+
+    /*TITULO DO GAME INFO*/
+    .game-info h2 {
+      font-size: 2.8rem; /*Tamanho da Fonte de 28px*/
+    }
+
+    /*PARÁGRAFOS*/
+    .game-info p, .game-info strong, p {
+      font-size: 1.8rem; /*Tamanho da Fonte*/
+    }
+  }
