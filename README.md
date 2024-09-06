@@ -15,7 +15,7 @@ Foram utilizados meios de como utilizar a Inteligência Artificial como Ferramen
 
 # Link do Projeto
 
-[Confira Aqui](https://imersao-alura-gemini-plum.vercel.app/)
+[Confira Meu Projeto Aqui](https://imersao-alura-gemini-plum.vercel.app/)<br></br>
 
 # Conclusão
 
